@@ -7,3 +7,8 @@
 # Author		:Álysson Gleyson da Silva
 # Email			:
 ###################################################################
+
+# Installing flatpak and enabling flathub
+
+apt install gnome-software-plugin-flatpak
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
