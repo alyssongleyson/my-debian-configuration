@@ -16,6 +16,9 @@ This is a script developed to automate my selection of software and personal con
 - zutty 
 - pidgin
 
+## Installed software
+- Bitwarden
+
 
 ## Author
 Álysson Gleyson da Silva

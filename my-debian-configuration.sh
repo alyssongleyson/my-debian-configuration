@@ -40,3 +40,9 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 apt remove gnome-games gnome-keyring hexchat imagemagick zutty pidgin -y
 
 apt autoremove -y
+
+###################################################################
+
+# Installing Bitwarden
+
+flatpak install flathub com.bitwarden.desktop -y
