@@ -8,6 +8,14 @@ This is a script developed to automate my selection of software and personal con
 - Editing sources.list
 - Instaling flatpak and enabling flathub
 
+## Removing unnecessary software
+- gnome-games 
+- gnome-keyring 
+- hexchat 
+- imagemagick 
+- zutty 
+- pidgin
+
 
 ## Author
 Álysson Gleyson da Silva
