@@ -38,7 +38,6 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 # Removing unnecessary software
 
 apt remove gnome-games gnome-keyring hexchat imagemagick zutty pidgin -y
-
 apt autoremove -y
 
 ###################################################################
@@ -50,4 +49,11 @@ flatpak install flathub com.bitwarden.desktop -y
 ###################################################################
 
 # Installing Simplenote
+
 flatpak install flathub com.simplenote.Simplenote -y
+
+###################################################################
+
+# Installing Obsidian
+
+flatpak install flathub md.obsidian.Obsidian -y

@@ -19,6 +19,7 @@ This is a script developed to automate my selection of software and personal con
 ## Installed software
 - Bitwarden
 - Simplenote
+- Obsidian
 
 
 ## Author
