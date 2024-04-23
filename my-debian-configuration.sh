@@ -46,3 +46,8 @@ apt autoremove -y
 # Installing Bitwarden
 
 flatpak install flathub com.bitwarden.desktop -y
+
+###################################################################
+
+# Installing Simplenote
+flatpak install flathub com.simplenote.Simplenote -y
