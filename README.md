@@ -20,6 +20,7 @@ This is a script developed to automate my selection of software and personal con
 - Bitwarden
 - Simplenote
 - Obsidian
+- Brave Browser
 
 
 ## Author

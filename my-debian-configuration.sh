@@ -57,3 +57,9 @@ flatpak install flathub com.simplenote.Simplenote -y
 # Installing Obsidian
 
 flatpak install flathub md.obsidian.Obsidian -y
+
+###################################################################
+
+# Installing Brave Browser
+
+flatpak install flathub com.brave.Browser -y
