@@ -21,6 +21,7 @@ This is a script developed to automate my selection of software and personal con
 - Simplenote
 - Obsidian
 - Brave Browser
+- Microsoft Edge
 
 
 ## Author

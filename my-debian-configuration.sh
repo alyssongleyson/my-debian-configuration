@@ -63,3 +63,9 @@ flatpak install flathub md.obsidian.Obsidian -y
 # Installing Brave Browser
 
 flatpak install flathub com.brave.Browser -y
+
+###################################################################
+
+# Installing Microsoft Edge
+
+flatpak install flathub com.microsoft.Edge -y
