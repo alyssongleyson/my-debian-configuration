@@ -22,6 +22,7 @@ This is a script developed to automate my selection of software and personal con
 - Obsidian
 - Brave Browser
 - Microsoft Edge
+- Mega Sync
 
 
 ## Author
