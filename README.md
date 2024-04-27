@@ -25,6 +25,7 @@ This is a script developed to automate my selection of software and personal con
 - Mega Sync
 - Visual Studio Code
 - Google Chrome
+- Dropbox
 
 
 ## Author

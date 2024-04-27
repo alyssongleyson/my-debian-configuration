@@ -66,6 +66,11 @@ sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable
 apt update -y
 sudo apt install google-chrome-stable -y
 ###################################################################
+# Installing Dropbox
+wget https://linux.dropboxstatic.com/debian/pool/main/dropbox_2024.04.17_amd64.deb
+sudo apt install "$PWD/dropbox_2024.04.17_amd64.deb" -y
+rm dropbox_2024.04.17_amd64.deb
+###################################################################
 echo "
 ╭━━━┳╮╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╭━━━┳╮
 ┃╭━╮┃┃╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱┃╭━╮┃┃
