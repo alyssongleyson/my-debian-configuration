@@ -59,6 +59,13 @@ wget https://packages.microsoft.com/repos/code/pool/main/c/code/code_1.88.1-1712
 sudo apt install "$PWD/code_1.88.1-1712771838_amd64.deb" -y
 rm code_1.88.1-1712771838_amd64.deb
 ###################################################################
+# Installing Google Chrome
+wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo tee /etc/apt/trusted.gpg.d/google.asc >/dev/null
+wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | gpg --dearmor |sudo tee /etc/apt/trusted.gpg.d/google.gpg >/dev/null
+sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+apt update -y
+sudo apt install google-chrome-stable -y
+###################################################################
 echo "
 ╭━━━┳╮╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╭━━━┳╮
 ┃╭━╮┃┃╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱┃╭━╮┃┃

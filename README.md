@@ -24,6 +24,7 @@ This is a script developed to automate my selection of software and personal con
 - Microsoft Edge
 - Mega Sync
 - Visual Studio Code
+- Google Chrome
 
 
 ## Author
