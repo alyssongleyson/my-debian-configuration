@@ -50,10 +50,15 @@ flatpak install flathub com.brave.Browser -y
 flatpak install flathub com.microsoft.Edge -y
 ###################################################################
 # Installing Mega Sync
-wget https://mega.nz/linux/repo/Debian_12/amd64/megasync-Debian_12_amd64.deb && sudo apt install "$PWD/megasync-Debian_12_amd64.deb" -y
+wget https://mega.nz/linux/repo/Debian_12/amd64/megasync-Debian_12_amd64.deb 
+sudo apt install "$PWD/megasync-Debian_12_amd64.deb" -y
 rm megasync-Debian_12_amd64.deb
 ###################################################################
-
+# Installing Visual Studio Code
+wget https://packages.microsoft.com/repos/code/pool/main/c/code/code_1.88.1-1712771838_amd64.deb
+sudo apt install "$PWD/code_1.88.1-1712771838_amd64.deb" -y
+rm code_1.88.1-1712771838_amd64.deb
+###################################################################
 echo "
 ╭━━━┳╮╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╭━━━┳╮
 ┃╭━╮┃┃╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱┃╭━╮┃┃
