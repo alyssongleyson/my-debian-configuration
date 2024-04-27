@@ -26,6 +26,7 @@ This is a script developed to automate my selection of software and personal con
 - Visual Studio Code
 - Google Chrome
 - Dropbox
+- Virtualbox
 
 
 ## Author

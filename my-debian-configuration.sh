@@ -71,6 +71,13 @@ wget https://linux.dropboxstatic.com/debian/pool/main/dropbox_2024.04.17_amd64.d
 sudo apt install "$PWD/dropbox_2024.04.17_amd64.deb" -y
 rm dropbox_2024.04.17_amd64.deb
 ###################################################################
+# Installing Virtualbox
+sudo apt install binutils build-essential dkms linux-headers-$(uname -r) make -y
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] https://download.virtualbox.org/virtualbox/debian bookworm contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
+wget -O- https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg --yes --output /usr/share/keyrings/oracle-virtualbox-2016.gpg --dearmor
+apt update -y
+apt install virtualbox-7.0 -y
+###################################################################
 echo "
 ╭━━━┳╮╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╭━━━┳╮
 ┃╭━╮┃┃╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱┃╭━╮┃┃
