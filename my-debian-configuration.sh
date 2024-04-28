@@ -25,6 +25,9 @@ deb-src http://deb.debian.org/debian/ bookworm-updates main non-free-firmware" >
 apt update -y
 apt upgrade -y
 ###################################################################
+# Fixing time delay in dual boot
+timedatectl set-local-rtc 1 --adjust-system-clock
+###################################################################
 # Installing flatpak and enabling flathub
 apt install flatpak -y
 apt install gnome-software-plugin-flatpak -y

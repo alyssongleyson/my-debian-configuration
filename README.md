@@ -6,6 +6,7 @@ This is a script developed to automate my selection of software and personal con
 
 ## Settings
 - Editing sources.list
+- Fixing time delay in dual boot
 - Instaling flatpak and enabling flathub
 
 ## Removing unnecessary software
