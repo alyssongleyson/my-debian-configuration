@@ -28,6 +28,7 @@ This is a script developed to automate my selection of software and personal con
 - Google Chrome
 - Dropbox
 - Virtualbox
+- Sublime Text
 
 
 ## Author
