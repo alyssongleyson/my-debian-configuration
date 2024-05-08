@@ -80,6 +80,10 @@ echo "deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] 
 wget -O- https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg --yes --output /usr/share/keyrings/oracle-virtualbox-2016.gpg --dearmor
 apt update -y
 apt install virtualbox-7.0 -y
+# Fixing virtualbox error kernel drive not installed
+sudo apt install build-essential module-assistant -y
+sudo m-a prepare -y
+sudo /sbin/vboxconfig
 ###################################################################
 # Installing Sublime Text
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null
