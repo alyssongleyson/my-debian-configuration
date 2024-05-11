@@ -29,6 +29,7 @@ This is a script developed to automate my selection of software and personal con
 - Dropbox
 - Virtualbox
 - Sublime Text
+- Synapse
 
 
 ## Author

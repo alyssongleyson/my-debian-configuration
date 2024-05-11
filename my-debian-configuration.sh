@@ -91,6 +91,9 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 apt update -y
 apt install sublime-text -y
 ###################################################################
+# Installing Synapse
+apt install synapse -y
+###################################################################
 echo "
 ╭━━━┳╮╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╭━━━┳╮
 ┃╭━╮┃┃╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱┃╭━╮┃┃
