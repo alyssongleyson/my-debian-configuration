@@ -94,6 +94,9 @@ apt install sublime-text -y
 # Installing Synapse
 apt install synapse -y
 ###################################################################
+# Installing Terminator
+apt install terminator -y
+###################################################################
 echo "
 ╭━━━┳╮╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╭━━━┳╮
 ┃╭━╮┃┃╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱┃╭━╮┃┃

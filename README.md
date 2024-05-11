@@ -30,6 +30,7 @@ This is a script developed to automate my selection of software and personal con
 - Virtualbox
 - Sublime Text
 - Synapse
+- Terminator
 
 
 ## Author
