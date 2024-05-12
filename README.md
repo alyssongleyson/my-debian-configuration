@@ -10,28 +10,28 @@ This is a script developed to automate my selection of software and personal con
 - Instaling flatpak and enabling flathub
 
 ## Removing unnecessary software
-- gnome-games 
-- gnome-keyring 
-- hexchat 
-- imagemagick 
-- zutty 
+- gnome-games
+- gnome-keyring
+- hexchat
+- imagemagick
 - pidgin
+- zutty
 
 ## Installed software
 - Bitwarden
-- Simplenote
-- Obsidian
-- Brave Browser
-- Microsoft Edge
-- Mega Sync
-- Visual Studio Code
-- Google Chrome
+- Brave Broser
 - Dropbox
-- Virtualbox
+- Figlet
+- Google Chrome
+- Mega Sync
+- Microsoft Edge
+- Obsidian
+- Simplenote
 - Sublime Text
 - Synapse
 - Terminator
-
+- Virtualbox
+- Visual Studio Code
 
 ## Author
 Álysson Gleyson da Silva
