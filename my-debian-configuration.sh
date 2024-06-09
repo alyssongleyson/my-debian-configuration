@@ -97,6 +97,9 @@ apt install synapse -y
 # Installing Terminator
 apt install terminator -y
 ###################################################################
+# Installing Dev Toolbox
+flatpak install flathub me.iepure.devtoolbox -y
+###################################################################
 # Installing Figlet and finalizing the script
 apt install figlet -y
 figlet $'Alysson\nGleyson'
