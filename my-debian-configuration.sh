@@ -57,6 +57,9 @@ rm dropbox_2024.04.17_amd64.deb
 # Installing Figlet
 apt install figlet -y
 ###################################################################
+# Installing Flameshot
+apt install flameshot -y
+###################################################################
 # Installing Google Chrome
 wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo tee /etc/apt/trusted.gpg.d/google.asc >/dev/null
 wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | gpg --dearmor |sudo tee /etc/apt/trusted.gpg.d/google.gpg >/dev/null

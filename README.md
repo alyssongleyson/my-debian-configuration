@@ -24,6 +24,7 @@ This is a script developed to automate my selection of software and personal con
 - Dev Toolbox
 - Dropbox
 - Figlet
+- Flameshot
 - Google Chrome
 - Klavaro
 - Mega Sync
