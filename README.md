@@ -24,6 +24,7 @@ This is a script developed to automate my selection of software and personal con
 - Dropbox
 - Figlet
 - Google Chrome
+- Klavaro
 - Mega Sync
 - Microsoft Edge
 - Obsidian

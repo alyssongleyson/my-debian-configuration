@@ -100,6 +100,9 @@ apt install terminator -y
 # Installing Dev Toolbox
 flatpak install flathub me.iepure.devtoolbox -y
 ###################################################################
+# Installing Klavaro
+sudo apt install klavaro -y
+###################################################################
 # Installing Figlet and finalizing the script
 apt install figlet -y
 figlet $'Alysson\nGleyson'
