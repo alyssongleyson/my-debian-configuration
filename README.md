@@ -20,6 +20,7 @@ This is a script developed to automate my selection of software and personal con
 ## Installed software
 - Bitwarden
 - Brave Broser
+- CopyQ
 - Dev Toolbox
 - Dropbox
 - Figlet
