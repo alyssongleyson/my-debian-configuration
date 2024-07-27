@@ -40,50 +40,46 @@ apt autoremove -y
 # Installing Bitwarden
 flatpak install flathub com.bitwarden.desktop -y
 ###################################################################
-# Installing Simplenote
-flatpak install flathub com.simplenote.Simplenote -y
-###################################################################
-# Installing Obsidian
-flatpak install flathub md.obsidian.Obsidian -y
-###################################################################
 # Installing Brave Browser
 flatpak install flathub com.brave.Browser -y
 ###################################################################
-# Installing Microsoft Edge
-flatpak install flathub com.microsoft.Edge -y
+# Installing CopyQ
+apt install copyq -y
 ###################################################################
-# Installing Mega Sync
-wget https://mega.nz/linux/repo/Debian_12/amd64/megasync-Debian_12_amd64.deb 
-sudo apt install "$PWD/megasync-Debian_12_amd64.deb" -y
-rm megasync-Debian_12_amd64.deb
+# Installing Dev Toolbox
+flatpak install flathub me.iepure.devtoolbox -y
 ###################################################################
-# Installing Visual Studio Code
-wget https://packages.microsoft.com/repos/code/pool/main/c/code/code_1.88.1-1712771838_amd64.deb
-sudo apt install "$PWD/code_1.88.1-1712771838_amd64.deb" -y
-rm code_1.88.1-1712771838_amd64.deb
+# Installing Dropbox
+wget https://linux.dropboxstatic.com/debian/pool/main/dropbox_2024.04.17_amd64.deb
+apt install "$PWD/dropbox_2024.04.17_amd64.deb" -y
+rm dropbox_2024.04.17_amd64.deb
+###################################################################
+# Installing Figlet
+apt install figlet -y
 ###################################################################
 # Installing Google Chrome
 wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo tee /etc/apt/trusted.gpg.d/google.asc >/dev/null
 wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | gpg --dearmor |sudo tee /etc/apt/trusted.gpg.d/google.gpg >/dev/null
-sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 apt update -y
-sudo apt install google-chrome-stable -y
+apt install google-chrome-stable -y
 ###################################################################
-# Installing Dropbox
-wget https://linux.dropboxstatic.com/debian/pool/main/dropbox_2024.04.17_amd64.deb
-sudo apt install "$PWD/dropbox_2024.04.17_amd64.deb" -y
-rm dropbox_2024.04.17_amd64.deb
+# Installing Klavaro
+apt install klavaro -y
 ###################################################################
-# Installing Virtualbox
-sudo apt install binutils build-essential dkms linux-headers-$(uname -r) make -y
-echo "deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] https://download.virtualbox.org/virtualbox/debian bookworm contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
-wget -O- https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg --yes --output /usr/share/keyrings/oracle-virtualbox-2016.gpg --dearmor
-apt update -y
-apt install virtualbox-7.0 -y
-# Fixing virtualbox error kernel drive not installed
-sudo apt install build-essential module-assistant -y
-sudo m-a prepare -y
-sudo /sbin/vboxconfig
+# Installing Mega Sync
+wget https://mega.nz/linux/repo/Debian_12/amd64/megasync-Debian_12_amd64.deb 
+apt install "$PWD/megasync-Debian_12_amd64.deb" -y
+rm megasync-Debian_12_amd64.deb
+###################################################################
+# Installing Microsoft Edge
+flatpak install flathub com.microsoft.Edge -y
+###################################################################
+# Installing Obsidian
+flatpak install flathub md.obsidian.Obsidian -y
+###################################################################
+# Installing Simplenote
+flatpak install flathub com.simplenote.Simplenote -y
 ###################################################################
 # Installing Sublime Text
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null
@@ -97,16 +93,22 @@ apt install synapse -y
 # Installing Terminator
 apt install terminator -y
 ###################################################################
-# Installing Dev Toolbox
-flatpak install flathub me.iepure.devtoolbox -y
+# Installing Virtualbox
+apt install binutils build-essential dkms linux-headers-$(uname -r) make -y
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] https://download.virtualbox.org/virtualbox/debian bookworm contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
+wget -O- https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg --yes --output /usr/share/keyrings/oracle-virtualbox-2016.gpg --dearmor
+apt update -y
+apt install virtualbox-7.0 -y
+# Fixing virtualbox error kernel drive not installed
+apt install build-essential module-assistant -y
+m-a prepare -y
+sudo /sbin/vboxconfig
 ###################################################################
-# Installing Klavaro
-sudo apt install klavaro -y
+# Installing Visual Studio Code
+wget https://packages.microsoft.com/repos/code/pool/main/c/code/code_1.88.1-1712771838_amd64.deb
+apt install "$PWD/code_1.88.1-1712771838_amd64.deb" -y
+rm code_1.88.1-1712771838_amd64.deb
 ###################################################################
-# Installing CopyQ
-sudo apt install copyq -y
-###################################################################
-# Installing Figlet and finalizing the script
-apt install figlet -y
+# Finalizing the script
 figlet $'Alysson\nGleyson'
 echo "Finished script" && date
