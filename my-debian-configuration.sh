@@ -57,6 +57,15 @@ rm dropbox_2024.04.17_amd64.deb
 # Installing Figlet
 apt install figlet -y
 ###################################################################
+# Installing Firefox Developer
+wget "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=pt-BR" -O firefox-developer.tar.bz2
+sudo tar -jxvf  firefox-developer.tar.bz2 -C /opt/
+mv /opt/firefox*/ /opt/firefox-developer
+ln -sf /opt/firefox-developer/firefox /usr/bin/firefox-developer
+echo -e '[Desktop Entry]\n Encoding=UTF-8\n Name=Firefox Developer\n Comment=Navegador Web\n Exec=/opt/firefox-developer/firefox\n Icon=/opt/firefox-developer/browser/chrome/icons/default/default128.png\n Type=Application\n Categories=Network' | sudo tee /usr/share/applications/firefox-developer.desktop
+chmod +x /usr/share/applications/firefox-developer.desktop
+rm firefox-developer.tar.bz2
+###################################################################
 # Installing Flameshot
 apt install flameshot -y
 ###################################################################
